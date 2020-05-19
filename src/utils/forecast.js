@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
             callback('unable to fnde location', undefined)
         } else {
             callback(undefined, 
-                body.current.weather_descriptions[0] +' it is currently ' + body.current.temperature + ' degrees out. Feel liks ' + body.current.feelslike
+                body.current.weather_descriptions[0] +' it is currently ' + body.current.temperature + ' degrees out. It feels lik ' + body.current.feelslike + ' degress out. The humidity is ' + body.current.humidity + '%.'
             )
         }
     })
